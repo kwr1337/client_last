@@ -1,0 +1,96 @@
+.modal__wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    z-index: 9999999999999;
+}
+
+.modal__wrapper.open {
+    height: 100%;
+    display: block;
+}
+
+.modal__wrapper.close {
+    height: 0;
+    display: none;
+}
+
+.modal__body {
+    max-width: 500px;
+    margin: auto;
+    background-color: #242B33;
+    margin-top: 10%;
+    padding: 20px;
+    max-height: 100%;
+
+}
+
+.modal__close {
+    text-align: right;
+    /*color: black;*/
+    font-size: 32px;
+    cursor: pointer;
+}
+.modal_flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.modal__body h2 {
+    text-align: left;
+    width: 100%;
+    /*color: black;*/
+    margin: 0;
+    font-size: 32px;
+}
+
+.modal__container{
+}
+
+.data__zayavka_md{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.data__zayavka_md_error{
+    margin: 0 auto ;
+}
+
+.data__zayavka__text_md{
+    /*max-width: 211px;*/
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    /*color: black;*/
+}
+
+.data__zayavka__input_md{
+    background: #2D343C;
+    color: #D4C17F;
+    margin-bottom: 10px;
+    min-height: 45.6px;
+    max-height: 45.6px;
+    padding: 0px 20px;
+    border: 1px solid #D4C17F;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.data__zayavka__button_md{
+    border: 0px;
+    display: flex;
+    min-height: 45.6px;
+    max-height: 45.6px;
+    min-width: 211px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0px 30px;
+    background: #D4C17F;
+}

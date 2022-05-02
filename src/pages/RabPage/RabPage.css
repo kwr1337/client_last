@@ -1,0 +1,122 @@
+.rabota__container{
+}
+.rabota__body{
+    display: flex;
+}
+.text__title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #D4C17F;
+    margin: 0px 0px 50px 0px;
+}
+.text__block{
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+}
+/*.img__block {*/
+/*    background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(../../img/raboty_img/provoda.jpg), #D4C17F;*/
+/*}*/
+.rabota__item{
+    background-color: #0d5c63;
+    margin-right: 15px;
+    /*flex: 1 1;*/
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.services__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+    justify-content: center;
+}
+
+.services__column {
+    flex: 0 1 33.333%;
+    margin-bottom: 5%;
+}
+@media (min-width: 670px) {
+    .services__column {
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 670px) {
+    .services__column {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services__column {
+        flex: 0 1 50%;
+    }
+}
+.services__item {
+    display: flex;
+    height: 230px;
+    background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(../../img/raboty_img/pio.jpg), #D4C17F;
+    background-size: cover;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.07);
+    min-width:300px;
+    padding: 0px 0px 25px 25px;
+    align-items: flex-end;
+}
+
+@media (max-width: 322px){
+    .services__item{
+        padding: 0px 0px 10px 10px;;
+    }
+}
+
+/*@media (max-width: 479px) {*/
+/*    .services__item {*/
+/*        padding: 25px;*/
+/*    }*/
+/*}*/
+
+
+.item-service > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.item-service__icon {
+}
+.item-service__title {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 28.18px
+}
+
+.img__block{
+    position:relative;
+
+}
+
+.img__block img{
+    /*position:absolute;*/
+    width:50%;
+    height:50%;
+    top:0;
+    left:0;
+    object-fit:cover;
+}
+
+@media (max-width: 1100px) {
+    .text__title{
+        margin: 50% 0px 50px 0px;
+    }
+}
+
+@media (max-width: 426px){
+    .text__title{
+        margin: 290% 0px 50px 0px;
+    }
+}
+
+@media (max-width: 321px){
+    .text__title{
+        margin: 350% 0px 50px 0px;
+    }
+}
