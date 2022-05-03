@@ -8,6 +8,14 @@
     line-height:24px ;
     font-weight: 400;
 }
+
+.zayvka__text__pod{
+    line-height: 1em;
+    padding: 10px;
+    border-bottom: 1px solid #D4C17F;
+    max-width: 90%;
+}
+
 .data__zayavka{
     display: flex;
     flex-wrap: wrap;
@@ -32,9 +40,12 @@
     border: 1px solid #D4C17F;
     box-sizing: border-box;
     outline: none;
+    -moz-appearance: textfield;
 }
 
-
+.data__zayavka__input::-webkit-inner-spin-button {
+    display: none;
+}
 
 .data__zayavka__button{
     border: 0px;
@@ -137,7 +148,7 @@
     margin-top: 320%;
 }
 .page1{
-    margin-top: 0%;
+    margin-top: 12%;
     margin-bottom: 5%;
 }
 /*@media (max-width: 1025px) {*/
