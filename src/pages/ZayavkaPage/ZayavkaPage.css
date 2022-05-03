@@ -140,51 +140,51 @@
     margin-top: 0%;
     margin-bottom: 5%;
 }
-@media (max-width: 1025px) {
-    .page1{
-        margin-top:40%;
-    }
-}
-@media (max-width: 769px) {
-    .page1{
-        margin-top:50%;
-    }
-}
+/*@media (max-width: 1025px) {*/
+/*    .page1{*/
+/*        margin-top:40%;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 769px) {*/
+/*    .page1{*/
+/*        margin-top:50%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 481px) {
-    .page1{
-        margin-top:75%;
-    }
-}
+/*@media (max-width: 481px) {*/
+/*    .page1{*/
+/*        margin-top:75%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 541px) {
-    .page1{
-        margin-top:75%;
-    }
-}
+/*@media (max-width: 541px) {*/
+/*    .page1{*/
+/*        margin-top:75%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 474px) {
-    .page1{
-        margin-top:185%;
-    }
-}
+/*@media (max-width: 474px) {*/
+/*    .page1{*/
+/*        margin-top:185%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 394px) {
-    .page1{
-        margin-top:180%;
-    }
-}
+/*@media (max-width: 394px) {*/
+/*    .page1{*/
+/*        margin-top:180%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 376px) {
-    .page1{
-        margin-top:220%;
-    }
-}
-@media (max-width: 321px) {
-    .page1{
-        margin-top:225%;
-    }
-}
+/*@media (max-width: 376px) {*/
+/*    .page1{*/
+/*        margin-top:220%;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 321px) {*/
+/*    .page1{*/
+/*        margin-top:225%;*/
+/*    }*/
+/*}*/
 
 
 .text__title1{
