@@ -5,6 +5,7 @@ export default class ProductStore {
         this._types = []
         this._products = []
         this._selectedType = {}
+        this._selectedProduct = null
         this._page = 1
         this._totalCount = 0
         this._limit = 12
@@ -32,6 +33,12 @@ export default class ProductStore {
         this._selectedType = type
     }
 
+    //custom
+    setSelectedProduct(p) {
+        this.setPage(1)
+        this._selectedProduct = p
+    }
+
     get types() {
         return this._types
     }
@@ -51,6 +58,11 @@ export default class ProductStore {
 
     get selectedType() {
         return this._selectedType
+    }
+
+    //custom
+    get selectedProduct() {
+        return this._selectedProduct
     }
 
 

@@ -18,7 +18,7 @@
 .tovary{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    margin-top: -90px;
+    margin-top: 20px;
 }
 
 @media (max-width: 800px) {

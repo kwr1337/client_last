@@ -11,6 +11,7 @@ const TypeBar = observer(() => {
 
 
 
+
     let formatOptions = (options = []) => {
         return product.types.map(option => {
             return {value: option.name, label: option.name};
@@ -23,10 +24,12 @@ const TypeBar = observer(() => {
         product.types.map((type) => {
             console.log("type" + type.name)
             if (value.value === type.name) {
+                product.setSelectedProduct(null)
                 product.setSelectedType(type)
             }
         })
     }
+
     return (
         <div>
             <Select

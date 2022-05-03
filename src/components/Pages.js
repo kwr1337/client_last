@@ -20,7 +20,7 @@ const Pages = observer(() => {
 
     return (
         <Pagination className="pag_page">
-        <Pagination.First className={'pagination1'} onClick={()=> product.setPage(1)}>
+        <Pagination.First className={'pagination1'} onClick={()=> action(1)}>
             {smaller}
         </Pagination.First>
             {
@@ -36,7 +36,7 @@ const Pages = observer(() => {
                     </Pagination.Item>
                 )}
 
-            <Pagination.Last className={'pagination1'} onClick={()=>{product.setPage(pageCount)}} >>></Pagination.Last>
+            <Pagination.Last className={'pagination1'} onClick={()=>{action(pageCount)}} >>></Pagination.Last>
             <p>{count}</p>
         </Pagination>
     );
