@@ -155,10 +155,9 @@ const MainPage = () => {
                     <div className="text__title">
                         Наши клиенты
                     </div>
-                    <div>
+                    <div className={"sercices__container"}>
                         <div className="services__body">
                             <div className="services__column">
-
                                 <div className="services__item">
                                     <img src={f_1} alt="" className="services__img"/>
                                 </div>
