@@ -61,7 +61,7 @@
 
 @media (max-width: 1025px) {
     .tovary, .tovary_in{
-        grid-template-columns: 45% 45% ;
+        grid-template-columns: 50% 50% ;
     }
     .input__pro {
         min-width: 610px;
@@ -88,7 +88,7 @@
         grid-template-columns: 40% 60% ;
     }
     .tovary, .tovary_in{
-        grid-template-columns: 100% ;
+        grid-template-columns: 50% 50%;
     }
     .input__pro {
         min-width: 406px;
@@ -101,6 +101,13 @@
     .tovary_in{
         grid-template-columns: 50% 50% !important;
     }
+}
+
+@media (max-width: 861px) {
+    .input__pro {
+        min-width: 100%;
+    }
+
 }
 
 
@@ -118,11 +125,21 @@
         margin-left: 0px;
     }
     .input__pro {
-        min-width: 365px;
+        min-width: 98%;
     }
     ._container__fil{
         max-width: 900px;
     }
+}
+
+@media (max-width: 600px) {
+    .input__pro {
+        min-width: 97%;
+    }
+    .tovary{
+        grid-template-columns: 100% ;
+    }
+
 }
 
 @media (max-width: 426px) {

@@ -19,7 +19,7 @@ const InternetShop = observer(() => {
         }, [])
 
         useEffect(() => {
-            fetchProducts(product.selectedType.id, product.page, 12).then(data => {
+            fetchProducts(null, product.selectedType.id, product.page, 12).then(data => {
                 product.setProducts(data.rows)
                 product.setTotalCount(data.count)
             })
