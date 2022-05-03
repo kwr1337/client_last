@@ -5,6 +5,7 @@ import {Anchor} from "antd";
 import {CgMenu} from "react-icons/cg"
 import {CgClose} from "react-icons/cg"
 import Burger from "./burger";
+import tel_img from "../img/tel.png";
 
 const {Link} = Anchor
 
@@ -51,13 +52,18 @@ const Header = () => {
                                 <Link href="/products" title={'Продукты для ЛЭП'}/>
                             </li>
                             <li className="menu__item">
-                                <Link href="/products-internet" title={'Продукты для Интернета'}/>
+                                <Link href="/products-internet" title={'Металлоконструкции для сетей интерент'}/>
                             </li>
                             <li className="menu__item">
                                 <Link href="/#zaiavka" title={'Заявка'}/>
                             </li>
                             <li className="menu__item">
                                 <Link href="/#map" title={'О нас'}/>
+                            </li>
+                            <li>
+                                <div className="menu__item__tel">
+                                    <img src={tel_img}/><p>8 (922) 030-00-07 <br/> 8 (987) 418-67-41</p> <br/>
+                                </div>
                             </li>
                         </ul>
                     </nav>

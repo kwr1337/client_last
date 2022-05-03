@@ -35,7 +35,7 @@ import f_22 from '../../img/raboty_img/23.jpg'
 import f_23 from '../../img/raboty_img/24.jpg'
 import f_24 from '../../img/raboty_img/25.jpg'
 
-import f_25 from '../../img/raboty_img/25.jpg'
+import f_25 from '../../img/raboty_img/33.jpg'
 import f_26 from '../../img/raboty_img/26.jpg'
 import f_27 from '../../img/raboty_img/27.jpg'
 import f_28 from '../../img/raboty_img/28.jpg'
@@ -43,6 +43,14 @@ import f_29 from '../../img/raboty_img/29.jpg'
 import f_30 from '../../img/raboty_img/30.jpg'
 import f_31 from '../../img/raboty_img/31.jpg'
 import f_32 from '../../img/raboty_img/32.jpg'
+
+import p_1 from '../../img/miproivodim/frezernye-raboty.jpg'
+import p_2 from '../../img/miproivodim/gibka-listov.jpg'
+import p_3 from '../../img/miproivodim/gibka-trub.jpg'
+import p_4 from '../../img/miproivodim/svarka.jpg'
+import p_5 from '../../img/miproivodim/izgotovlenie-metallokonstrukcij.jpg'
+import p_6 from '../../img/miproivodim/plazmennaya-rezka.jpg'
+import p_7 from '../../img/miproivodim/tokarnye-raboty.jpg'
 
 
 import '../PremPage/PremPage.css'
@@ -55,6 +63,8 @@ import {fetchMail} from "../../http/productApi";
 import Modal from "../Modal";
 import {AiOutlineCheck} from 'react-icons/ai'
 import {BiErrorAlt} from 'react-icons/bi'
+
+
 const MainPage = () => {
 
 
@@ -75,8 +85,7 @@ const MainPage = () => {
                     setModal({...modal, modal_error: true})
                 }
             })
-        }
-        else{
+        } else {
             setModal({...modal, modal_val: true})
         }
     }
@@ -88,17 +97,16 @@ const MainPage = () => {
                     <div className="main-block__container _container">
                         <div className="main-block__body">
                             <div>
-                                <h1 className="main-block__title">"СпецМеталл"<br/>завод металлоконструкций для лэп
-                                </h1>
+                                <h1 className="main-block__title">Производственная компания <br/> "СпецМеталл"</h1>
                             </div>
                             <div>
                                 <div className="main-block__text">
-                                    <div className="main-block__text__img">
-                                        <img src={metka_img}/><p>г.Чистополь, ул.Пушкина, 133</p>
-                                    </div>
-                                    <div className="main-block__text__img">
-                                        <img src={tel_img}/><p>8 (922) 030-00-07 <br/> 8 (987) 418-67-41</p> <br/>
-                                    </div>
+                                    {/*<div className="main-block__text__img">*/}
+                                    {/*    <img src={metka_img}/><p>г.Чистополь, ул.Пушкина, 133</p>*/}
+                                    {/*</div>*/}
+                                    {/*<div className="main-block__text__img">*/}
+                                    {/*    <img src={tel_img}/><p>8 (922) 030-00-07 <br/> 8 (987) 418-67-41</p> <br/>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>
@@ -111,7 +119,49 @@ const MainPage = () => {
                 </div>
             </div>
 
-            <div className="page">
+
+            <div className="page1">
+                <div className="rabota__container _container">
+                    <div className="text__title">
+                        Предоставляем услуги
+                    </div>
+                    <div className={"proizvod__container"}>
+                        <div className="proizvod__body">
+                            <div className="proizvod__column">
+                                <div className="proizvod__up">
+                                    <div className="proizvod__item">
+                                        <img src={p_1} alt="" className="proizvod__img"/>
+                                    </div>
+                                    <div className="proizvod__item">
+                                        <img src={p_2} alt="" className="proizvod__img"/>
+                                    </div>
+                                    <div className="proizvod__item">
+                                        <img src={p_3} alt="" className="proizvod__img"/>
+                                    </div>
+                                    <div className="proizvod__item">
+                                        <img src={p_4} alt="" className="proizvod__img"/>
+                                    </div>
+                                </div>
+                                <div className="proizvod__down">
+                                    <div className="proizvod__item">
+                                        <img src={p_5} alt="" className="proizvod__img"/>
+                                    </div>
+                                    <div className="proizvod__item">
+                                        <img src={p_6} alt="" className="proizvod__img"/>
+                                    </div>
+                                    <div className="proizvod__item">
+                                        <img src={p_7} alt="" className="proizvod__img"/>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="page1">
                 <div className="prem__container _container">
                     <div className="prem__body">
                         <div className="body__item">
@@ -278,7 +328,8 @@ const MainPage = () => {
                         <div className="data__zayavka">
                             <input autoComplete="off" type="text" placeholder="Имя" className="data__zayavka__input"
                                    onChange={event => SetName(event.target.value)}/>
-                            <input autoComplete="off" type="tel" placeholder="Телефон" className="data__zayavka__input"
+                            <input autoComplete="off" type="number" placeholder="Телефон"
+                                   className="data__zayavka__input"
                                    onChange={event => SetTel(event.target.value)}/>
                             <p id="map" className="data__zayavka__text">*Мы никому не передаем ваши данные. И не
                                 сохраняем ваш номер в базу.</p>
@@ -295,10 +346,28 @@ const MainPage = () => {
                     <div className="text__title1">
                         Мы находимся
                     </div>
-                    <div className="map">
-                        <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A74a6f4ea17319a0cbb41e283494d3d53a29951957a8e2a26479154565accacce&amp;source=constructor"
-                            width="100%" height="400" frameBorder="0"></iframe>
+                    <div className="map__body">
+                        <div className="map_left">
+                            <div className="zayvka__text__pod">
+                                <h4>Адрес:</h4>
+                                <p>г.Чистополь, ул.Пушкина, 133</p>
+                            </div>
+                            <div className="zayvka__text__pod">
+                                <h4>Телефон:</h4>
+                                <p>8 (922) 030-00-07</p>
+                                <p>8 (922) 030-00-07</p>
+                                <p>8 (922) 030-00-07</p>
+                            </div>
+                            <div className="zayvka__text__pod">
+                                <h4>Почта:</h4>
+                                <p>specmetallofficial@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className="map_right">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A74a6f4ea17319a0cbb41e283494d3d53a29951957a8e2a26479154565accacce&amp;source=constructor"
+                                width="100%" height="400" frameBorder="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -307,7 +376,7 @@ const MainPage = () => {
             <Modal
                 title={'Заявка'}
                 isOpened={modal.modal}
-                onModalClose={() =>  setModal({...modal,modal: false})}
+                onModalClose={() => setModal({...modal, modal: false})}
             >
                 <div className={"modal__container"}>
                     <div className="data__zayavka_md">
@@ -321,7 +390,7 @@ const MainPage = () => {
             <Modal
                 title={'Ошибка'}
                 isOpened={modal.modal_val}
-                onModalClose={() =>  setModal({...modal,modal_val: false})}
+                onModalClose={() => setModal({...modal, modal_val: false})}
             >
                 <div className={"modal__container"}>
                     <div className="data__zayavka_md">
@@ -335,7 +404,7 @@ const MainPage = () => {
             <Modal
                 title={'Ошибка'}
                 isOpened={modal.modal_error}
-                onModalClose={() =>  setModal({...modal,modal_error: false})}
+                onModalClose={() => setModal({...modal, modal_error: false})}
             >
                 <div className={"modal__container"}>
                     <div className="data__zayavka_md">

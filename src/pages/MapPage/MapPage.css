@@ -1,7 +1,18 @@
+.map__body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
+.map_left{
 
+}
 
-.map{
+.map_right{
     height: 400px;
-    background: #626262;
+}
+
+@media (max-width: 600px) {
+    .map__body{
+        grid-template-columns: 100%;
+    }
 }

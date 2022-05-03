@@ -48,11 +48,11 @@
 
 .main-block__title {
     margin-top: 20%;
-    margin-bottom: 45%;
+    margin-bottom: 40%;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 52px;
     line-height: 64px;
     text-align: center;
     color: #D4C17F;
@@ -79,7 +79,7 @@
 }
 
 .main-block__text {
-    margin-top: 6%;
+    /*margin-top: 6%;*/
     display: flex;
     color: #FFFFFF;
     text-shadow: 1px 1px 1px #252B42;
@@ -90,7 +90,25 @@
 .main-block__text__img{
     display: flex;
     align-items: center ;
+    white-space: nowrap;
 }
+
+.menu__item__tel{
+    display: flex;
+    align-items: center ;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.menu__item__tel p{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+
+
 @media (max-width: 661px){
     .main-block__text{
         display: grid;
