@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import './MainPage.css'
 import main_img from '../../img/Main_img.jpg'
-import tel_img from '../../img/tel.png'
-import metka_img from '../../img/metka.png'
 import steel from '../../img/prem_img/steel.png'
 import svarshik from '../../img/prem_img/svarshik.png'
 import bolt from '../../img/prem_img/bolt.png'
 import nakovlnia from '../../img/prem_img/nakovlnia.png'
+import {BiMap} from 'react-icons/bi'
+import {BsTelephone} from 'react-icons/bs'
+import {HiOutlineMail} from 'react-icons/hi'
 
 import f_1 from '../../img/raboty_img/1.jpg'
 import f_2 from '../../img/raboty_img/2.jpg'
@@ -349,17 +350,27 @@ const MainPage = () => {
                     <div className="map__body">
                         <div className="map_left">
                             <div className="zayvka__text__pod">
-                                <h4>Адрес:</h4>
+                                <div className="map__title_con">
+                                    <BiMap  size={"20px"} className={'map_metca'}/>
+                                    <h4>Адрес:</h4>
+                                </div>
                                 <p>г.Чистополь, ул.Пушкина, 133</p>
                             </div>
                             <div className="zayvka__text__pod">
-                                <h4>Телефон:</h4>
+                                <div className="map__title_con">
+                                    <BsTelephone size={"20px"} className={'map_metca'}/>
+                                    <h4>Телефон:</h4>
+                                </div>
                                 <p>8 (922) 030-00-07</p>
-                                <p>8 (922) 030-00-07</p>
-                                <p>8 (922) 030-00-07</p>
+                                <p>8 (987) 418-67-41</p>
+                                <p>8 (917) 396-66-35</p>
+
                             </div>
                             <div className="zayvka__text__pod">
-                                <h4>Почта:</h4>
+                                <div className="map__title_con">
+                                    <HiOutlineMail size={"20px"} className={'map_metca'}/>
+                                    <h4>Почта:</h4>
+                                </div>
                                 <p>specmetallofficial@gmail.com</p>
                             </div>
                         </div>

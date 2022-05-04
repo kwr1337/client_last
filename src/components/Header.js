@@ -58,11 +58,11 @@ const Header = () => {
                                 <Link href="/#zaiavka" title={'Заявка'}/>
                             </li>
                             <li className="menu__item">
-                                <Link href="/#map" title={'О нас'}/>
+                                <Link href="/#map" title={'Контакты'}/>
                             </li>
                             <li>
                                 <div className="menu__item__tel">
-                                    <img src={tel_img}/><p>8 (922) 030-00-07 <br/> 8 (987) 418-67-41</p> <br/>
+                                    <img src={tel_img}/><p>8 (922) 030-00-07 <br/> 8 (987) 418-67-41 <br/> 8 (917) 396-66-35</p>
                                 </div>
                             </li>
                         </ul>

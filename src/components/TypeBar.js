@@ -33,7 +33,7 @@ const TypeBar = observer(() => {
     return (
         <div>
             <Select
-                menuIsOpen
+                // menuIsOpen
                 classNamePrefix="react-select"
                 options={formatOptions(options)}
                 expanded='true'

@@ -16,3 +16,15 @@
         grid-template-columns: 100%;
     }
 }
+
+.map__title_con{
+    display: flex;
+    align-items: center;
+}
+
+.map__title_con img{
+    margin-right: 10px;
+}
+.map_metca{
+    margin-right: 10px;
+}

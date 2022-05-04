@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding-top: 10px;
     line-height: 1em;
-    color: #D4C17F;
+    color: #ffe898;
 }
 a{
     text-decoration: none;
@@ -55,6 +55,7 @@ a{
     color: #FFFFFF;
     text-align: center;
     background: #D4C17F;
+    border: none;
 }
 
 .content_ras{
