@@ -47,6 +47,8 @@
     border: 3px solid #D4C17F;
     background: #43474D;
     color: #D4C17F;
+    /*text-transform: capitalize;*/
+    outline: none;
 }
 
 .filter__button{

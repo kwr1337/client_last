@@ -14,7 +14,7 @@ const TypeBar = observer(() => {
 
     let formatOptions = (options = []) => {
         return product.types.map(option => {
-            return {value: option.name, label: option.name};
+            return {value: option.name.toLowerCase(), label: option.name.toLowerCase()};
         });
     };
 
