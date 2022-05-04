@@ -42,6 +42,7 @@
     min-width: 905px;
     min-height: 80px;
     cursor: pointer;
+    font-weight: bolder;
     margin-top: 10px;
     padding: 0px 0px 0px 8px ;
     border: 3px solid #D4C17F;
@@ -50,15 +51,19 @@
     /*text-transform: capitalize;*/
     outline: none;
 }
+.input__pro::-webkit-input-placeholder{
+    color: #ffe898;
+}
 
 .filter__button{
     cursor: pointer;
+    font-weight: bolder;
     margin-top: 10px;
     padding: 0px 0px 30px 8px ;
     border: 3px solid #D4C17F;
     height: 50px;
     background: #43474D;
-    color: #D4C17F;
+    color: #ffe898;
 }
 
 @media (max-width: 1025px) {
@@ -248,9 +253,11 @@
     white-space: nowrap !important;
     border-bottom: #D4C17F 1px solid;
     padding: 0px 12px !important;
+    font-weight: bolder;
 }
 .react-select__input-container{
     color: #D4C17F !important;
+    font-weight: bolder;
 }
 .react-select__option:hover {
     cursor: pointer;
@@ -259,11 +266,13 @@
 }
 
 .react-select__single-value {
-    color: #D4C17F !important;
+    color: #ffe898 !important;
+    font-weight: bolder;
 }
 .react-select__placeholder{
     /*height: 40px !important;*/
-    color: #D4C17F !important;
+    color: #ffe898 !important;
+    font-weight: bolder;
 }
 
 .react-select__menu-list{

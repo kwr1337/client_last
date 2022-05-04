@@ -14,7 +14,7 @@ const TypeBar = observer(() => {
 
     let formatOptions = (options = []) => {
         return product.types.map(option => {
-            return {value: option.name.toLowerCase(), label: option.name.toLowerCase()};
+            return {value: option.name, label: option.name};
         });
     };
 
@@ -33,7 +33,7 @@ const TypeBar = observer(() => {
     return (
         <div>
             <Select
-                // menuIsOpen
+                menuIsOpen
                 classNamePrefix="react-select"
                 options={formatOptions(options)}
                 expanded='true'

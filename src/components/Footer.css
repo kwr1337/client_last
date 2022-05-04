@@ -15,6 +15,7 @@
 }
 
 .footer__container{
+    font-weight: bolder;
     display: grid;
     justify-content: center;
     justify-items: center;
