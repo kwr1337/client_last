@@ -1,4 +1,5 @@
 import {$host} from "./index";
+import FormData from 'form-data'
 
 export const fetchTypes = async () => {
     const {data} = await $host.get('api/type')
@@ -17,9 +18,20 @@ export const fetchOneProduct = async (id) => {
     return data
 }
 
-export const fetchMail = async (name1, tel1) => {
-    const {data} = await $host.post('api/access', {name:name1, tel: tel1})
-    console.log('api/access', {params: {name1, tel1}})
-    console.log(data)
+export const fetchMail = async (name1, tel1,file1) => {
+    let form = new FormData()
+    form.append('name', name1)
+    form.append('tel',tel1)
+
+    if(file1.length !== 0){
+    form.append('file', file1[0])
+        }
+
+    const {data} = await $host({
+        method: 'post',
+        url: 'api/access',
+        data: form,
+        headers: { "Content-Type": "multipart/form-data" }
+    })
     return data
 }

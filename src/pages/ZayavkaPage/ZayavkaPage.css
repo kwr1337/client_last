@@ -1,37 +1,51 @@
-.zayvka__body{
+.zayvka__body {
     display: flex;
 }
-.zayavka__text{
+
+.zayavka__text {
     max-width: 490px;
     margin-right: 20px;
     font-size: 16px;
-    line-height:24px ;
+    line-height: 24px;
     font-weight: 400;
 }
 
-.zayvka__text__pod{
+.zayvka__text__pod {
     line-height: 1em;
     padding: 10px;
     border-bottom: 1px solid #D4C17F;
     max-width: 90%;
 }
 
-.data__zayavka{
+.data__zayavka {
     display: flex;
     flex-wrap: wrap;
 }
+
 .data__zayavka > * {
     margin: 10px 30px 0px 0px;
 }
 
-.data__zayavka__text{
+@media (max-width: 1441px) {
+    .data__zayavka > * {
+        margin: 10px 20px 0px 0px;
+    }
+
+}
+
+.data__zayavka__text {
     max-width: 211px;
     line-height: 18px;
     font-size: 13px;
     font-weight: 400;
 }
 
-.data__zayavka__input{
+.data__zayavka__body {
+    display: flex;
+
+}
+
+.data__zayavka__input {
     background: #2D343C;
     color: #D4C17F;
     min-height: 45.6px;
@@ -41,18 +55,43 @@
     box-sizing: border-box;
     outline: none;
     -moz-appearance: textfield;
+    /*margin-right: inherit;*/
+
 }
+
+.input[type=file] {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none
+}
+
+.data__zayavka__input__file {
+    background: #2D343C;
+    color: #D4C17F;
+    min-height: 45.6px;
+    max-height: 45.6px;
+    padding: 0px 20px;
+    border: 1px solid #D4C17F;
+    box-sizing: border-box;
+    outline: none;
+    min-width: 440px;
+    -moz-appearance: textfield;
+}
+
+
+
 
 .data__zayavka__input::-webkit-inner-spin-button {
     display: none;
 }
 
-.data__zayavka__button{
+.data__zayavka__button {
     border: 0px;
     display: flex;
     min-height: 45.6px;
     max-height: 45.6px;
-    min-width: 211px;
+    min-width: 200px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -61,96 +100,113 @@
     padding: 0px 30px;
     background: #D4C17F;
 }
+
 @media (max-width: 1024px) {
-    .zayvka__body{
+    .zayvka__body {
         flex-direction: column;
     }
-    .zayavka__text{
+
+    .zayavka__text {
         max-width: 1000px;
         margin-bottom: 1%;
     }
 }
 
 @media (max-width: 801px) {
-    .data__zayavka__input{
+    .data__zayavka__input {
         min-width: 690px;
     }
-    .data__zayavka__button{
+
+    .data__zayavka__button {
         min-width: 690px;
     }
-    .data__zayavka__text{
+
+    .data__zayavka__text {
         min-width: 690px;
     }
 }
 
-@media (max-width: 541px){
-    .data__zayavka__input{
+@media (max-width: 541px) {
+    .data__zayavka__input {
         min-width: 470px;
     }
-    .data__zayavka__button{
+
+    .data__zayavka__button {
         min-width: 470px;
     }
-    .data__zayavka__text{
+
+    .data__zayavka__text {
         min-width: 470px;
     }
 }
 
-@media (max-width: 481px){
-    .data__zayavka__input{
+@media (max-width: 481px) {
+    .data__zayavka__input {
         min-width: 430px;
     }
-    .data__zayavka__button{
+
+    .data__zayavka__button {
         min-width: 430px;
     }
-    .data__zayavka__text{
+
+    .data__zayavka__text {
         min-width: 430px;
     }
 }
 
-@media (max-width: 426px){
-    .data__zayavka__input{
+@media (max-width: 426px) {
+    .data__zayavka__input {
         min-width: 370px;
     }
-    .data__zayavka__button{
+
+    .data__zayavka__button {
         min-width: 370px;
     }
-    .data__zayavka__text{
+
+    .data__zayavka__text {
         min-width: 370px;
     }
 }
 
-@media (max-width: 376px) {
-    .data__zayavka__input{
+
+@media (max-width: 399px) {
+    .data__zayavka__input {
         min-width: 330px;
     }
-    .data__zayavka__button{
+
+    .data__zayavka__button {
         min-width: 330px;
     }
-    .data__zayavka__text{
+
+    .data__zayavka__text {
         min-width: 330px;
     }
 }
 
 
+@media (max-width: 321px) {
+    .data__zayavka__input {
+        min-width: 270px;
+    }
 
-@media (max-width: 321px){
-    .data__zayavka__input{
+    .data__zayavka__button {
         min-width: 270px;
     }
-    .data__zayavka__button{
-        min-width: 270px;
-    }
-    .data__zayavka__text{
+
+    .data__zayavka__text {
         min-width: 270px;
     }
 }
-.zayavkapage__container{
+
+.zayavkapage__container {
     margin-top: 320%;
 }
-.page1{
+
+.page1 {
     margin-top: 12%;
     margin-bottom: 5%;
 }
+
 /*@media (max-width: 1025px) {*/
 /*    .page1{*/
 /*        margin-top:40%;*/
@@ -198,9 +254,99 @@
 /*}*/
 
 
-.text__title1{
+.text__title1 {
     font-size: 36px;
     font-weight: 700;
     color: #D4C17F;
-    margin: 0px 0px 50px 0px;
+    margin: 50px 0px 20px 0px;
+}
+
+
+
+.example-2 .btn-tertiary {
+
+}
+input::placeholder{
+    color:#D4C17F;
+    font-size: 14px;
+    font-weight: 100;
+}
+.form-group{
+    background: #2D343C;
+    color:#D4C17F;
+    min-height: 45.6px;
+    max-height: 45.6px;
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 1px solid #D4C17F;
+    box-sizing: border-box;
+    outline: none;
+    min-width: 440px;
+    -moz-appearance: textfield;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-2 .input-file {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1
+}
+
+.example-2 .input-file + .js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    cursor: pointer
+}
+
+.example-2 .input-file + .js-labelFile .icon:before {
+    content: "\f093"
+}
+
+.example-2 .input-file + .js-labelFile.has-file .icon:before {
+    content: "\f00c";
+    color: #5AAC7B
+}
+
+@media (max-width: 769px) {
+    .form-group {
+        min-width: 690px;
+    }
+}
+
+@media (max-width: 541px) {
+    .form-group {
+        min-width: 470px;
+    }
+}
+
+@media (max-width: 481px) {
+    .form-group {
+        min-width: 430px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form-group {
+        min-width: 370px;
+    }
+}
+
+@media (max-width: 399px) {
+    .form-group {
+        min-width: 330px;
+    }
+}
+
+@media (max-width: 326px) {
+    .form-group {
+        min-width: 270px;
+    }
 }

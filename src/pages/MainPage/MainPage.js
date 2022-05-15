@@ -71,6 +71,7 @@ const MainPage = () => {
 
     const [name, SetName] = useState('');
     const [tel, SetTel] = useState('');
+    const [file, SetFile] = useState([]);
     const [modal, setModal] = useState({
         modal: false,
         modal_val: false,
@@ -79,7 +80,7 @@ const MainPage = () => {
 
     let call = () => {
         if (name.length > 2 && tel.length >= 10) {
-            fetchMail(name, tel).then(data => {
+            fetchMail(name, tel, file).then(data => {
                 if (data.status === 'success') {
                     setModal({...modal, modal: true})
                 } else {
@@ -193,7 +194,7 @@ const MainPage = () => {
                             <div className="body__img">
                                 <img src={svarshik}/>
                             </div>
-                            <div className="item__text" id="zaiavka">
+                            <div className="item__text" >
                                 ОПЫТ ГОСУДАРСТВЕННЫХ ОБОРОННЫХ ПРОЕКТОВ
                             </div>
                         </div>
@@ -254,56 +255,8 @@ const MainPage = () => {
                                 <div className="services__item">
                                     <img src={f_15} alt="" className="services__img"/>
                                 </div>
-                                <div className="services__item">
+                                <div className="services__item" id="zaiavka">
                                     <img src={f_16} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_17} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_18} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_19} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_20} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_21} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_22} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_23} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_24} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_25} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_26} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_27} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_28} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_29} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_30} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_31} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_32} alt="" className="services__img"/>
                                 </div>
 
                             </div>
@@ -315,7 +268,7 @@ const MainPage = () => {
             <div className="page1">
                 <div className="zayavkapage__container _container">
                     <div className="text__title1">
-                        Хотите закзать?
+                        Хотите заказать?
                     </div>
                     <div className="zayvka__body">
                         <div className="zayavka__text">
@@ -327,13 +280,31 @@ const MainPage = () => {
                             образцов.
                         </div>
                         <div className="data__zayavka">
-                            <input autoComplete="off" type="text" placeholder="Имя" className="data__zayavka__input"
+
+                            <input autoComplete="off" type="text" placeholder="Имя"
+                                   className="data__zayavka__input"
                                    onChange={event => SetName(event.target.value)}/>
                             <input autoComplete="off" type="number" placeholder="Телефон"
                                    className="data__zayavka__input"
                                    onChange={event => SetTel(event.target.value)}/>
+                            <div className="file">
+                                {/*<input autoComplete="off" type="file" placeholder="..."*/}
+                                {/*       className="data__zayavka__input__file"*/}
+                                {/*       onChange={event => SetFile(event.target.files[0])}/>*/}
+                                <div className="example-2">
+                                    <div className="form-group">
+                                        <input autoComplete="off" type="file" name="file" id="file" className="input-file"
+                                               onChange={event => SetFile(event.target.files)}/>
+                                        <label htmlFor="file" className="btn btn-tertiary js-labelFile">
+                                            <span className="js-fileName">Загрузить файл</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                             <p id="map" className="data__zayavka__text">*Мы никому не передаем ваши данные. И не
                                 сохраняем ваш номер в базу.</p>
+
                             <button type="submit" className="data__zayavka__button"
                                     onClick={() => call()}>Отправить
                             </button>
@@ -351,7 +322,7 @@ const MainPage = () => {
                         <div className="map_left">
                             <div className="zayvka__text__pod">
                                 <div className="map__title_con">
-                                    <BiMap  size={"20px"} className={'map_metca'}/>
+                                    <BiMap size={"20px"} className={'map_metca'}/>
                                     <h4>Адрес:</h4>
                                 </div>
                                 <p>г.Чистополь, ул.Пушкина, 133</p>

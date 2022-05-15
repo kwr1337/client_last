@@ -27,7 +27,7 @@ const ProductPage = () => {
 
     let call = () => {
         if (name.length > 2 && tel.length >= 10) {
-            fetchMail(name, tel).then(data => {
+            fetchMail(name, tel, []).then(data => {
                 if (data.status === 'success') {
                     setModal({...modal, modal_success: true})
                 } else {

@@ -10,10 +10,10 @@ const Burger = (props) => {
                     <Link href="/#main" title={'Главная'}/>
                 </li>
                 <li className="menu__item" onClick={() => props.isMobile && props.closeMobileMenu()}>
-                    <Link href="/products" title={'Продукты для ЛЭП'}/>
+                    <Link href="/products" title={'Металлоизделия для ЛЭП'}/>
                 </li>
                 <li className="menu__item" onClick={() => props.isMobile && props.closeMobileMenu()}>
-                    <Link href="/products-internet" title={'Продукты для Интернета'}/>
+                    <Link href="/products-internet" title={'Крепления и кронштейны для связи , ВОЛС'}/>
                 </li>
                 <li className="menu__item" onClick={() => props.isMobile && props.closeMobileMenu()}>
                     <Link href="/#zaiavka" title={'Заявка'}/>
