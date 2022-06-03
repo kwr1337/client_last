@@ -278,27 +278,27 @@ const MainPage = () => {
                             печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                             распечатки
                             образцов.
-                        </div>
-                        <div className="data__zayavka">*/}*/}
+                        </div> */}
+                        <div className="data__zayavka">
 
-                           {/* <input autoComplete="off" type="text" placeholder="Имя"
+                           <input autoComplete="off" type="text" placeholder="Имя"
                                    className="data__zayavka__input"
                                    onChange={event => SetName(event.target.value)}/>
                             <input autoComplete="off" type="number" placeholder="Телефон"
                                    className="data__zayavka__input"
                                    onChange={event => SetTel(event.target.value)}/>
-                            <div className="file">*/}
+                            <div className="file">
                                 {/*<input autoComplete="off" type="file" placeholder="..."*/}
                                 {/*       className="data__zayavka__input__file"*/}
                                 {/*       onChange={event => SetFile(event.target.files[0])}/>*/}
                                 <div className="example-2">
-                                    <div className="form-group">
+                                    {/*<div className="form-group">
                                         <input autoComplete="off" type="file" name="file" id="file" className="input-file"
                                                onChange={event => SetFile(event.target.files)}/>
                                         <label htmlFor="file" className="btn btn-tertiary js-labelFile">
                                             <span className="js-fileName">Загрузить файл</span>
                                         </label>
-                                    </div>
+                                    </div>*/}
                                 </div>
                             </div>
 
