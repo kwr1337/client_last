@@ -271,7 +271,7 @@ const MainPage = () => {
                         Хотите заказать?
                     </div>
                     <div className="zayvka__body">
-                        <div className="zayavka__text">
+                       {/* <div className="zayavka__text">
                             Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
                             является
                             стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
@@ -279,15 +279,15 @@ const MainPage = () => {
                             распечатки
                             образцов.
                         </div>
-                        <div className="data__zayavka">
+                        <div className="data__zayavka">*/}*/}
 
-                            <input autoComplete="off" type="text" placeholder="Имя"
+                           {/* <input autoComplete="off" type="text" placeholder="Имя"
                                    className="data__zayavka__input"
                                    onChange={event => SetName(event.target.value)}/>
                             <input autoComplete="off" type="number" placeholder="Телефон"
                                    className="data__zayavka__input"
                                    onChange={event => SetTel(event.target.value)}/>
-                            <div className="file">
+                            <div className="file">*/}
                                 {/*<input autoComplete="off" type="file" placeholder="..."*/}
                                 {/*       className="data__zayavka__input__file"*/}
                                 {/*       onChange={event => SetFile(event.target.files[0])}/>*/}
