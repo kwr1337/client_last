@@ -334,7 +334,7 @@ const MainPage = () => {
                                 </div>
                                 <p>8 (922) 030-00-07</p>
                                 <p>8 (987) 418-67-41</p>
-                                <p>8 (917) 396-66-35</p>
+                                <p></p>
 
                             </div>
                             <div className="zayvka__text__pod">
