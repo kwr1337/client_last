@@ -33,7 +33,8 @@ a{
 }
 
 .page{
-    margin-bottom: 5%;
+    position: relative;
+    /*margin-bottom: 5%;*/
 }
 @media (max-width: 321px) {
     ._container{

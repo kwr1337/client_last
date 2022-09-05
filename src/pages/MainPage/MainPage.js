@@ -99,7 +99,7 @@ const MainPage = () => {
                     <div className="main-block__container _container">
                         <div className="main-block__body">
                             <div>
-                                <h1 className="main-block__title">Производственная компания <br/> "СпецМеталл"</h1>
+                                <h1 className="main-block__title">Производственная компания <br/> "ЭнергоРесурс"</h1>
                             </div>
                             <div>
                                 <div className="main-block__text">
@@ -325,16 +325,14 @@ const MainPage = () => {
                                     <BiMap size={"20px"} className={'map_metca'}/>
                                     <h4>Адрес:</h4>
                                 </div>
-                                <p>г.Чистополь, ул.Пушкина, 133</p>
+                                <p>г.Чистополь, ул.Пушкина, 133З</p>
                             </div>
                             <div className="zayvka__text__pod">
                                 <div className="map__title_con">
                                     <BsTelephone size={"20px"} className={'map_metca'}/>
                                     <h4>Телефон:</h4>
                                 </div>
-                                <p>8 (922) 030-00-07</p>
                                 <p>8 (987) 418-67-41</p>
-                                <p></p>
 
                             </div>
                             <div className="zayvka__text__pod">
@@ -342,7 +340,7 @@ const MainPage = () => {
                                     <HiOutlineMail size={"20px"} className={'map_metca'}/>
                                     <h4>Почта:</h4>
                                 </div>
-                                <p>specmetallofficial@gmail.com</p>
+                                <p>e_resurs16@mail.ru</p>
                             </div>
                         </div>
                         <div className="map_right">

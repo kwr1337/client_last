@@ -22,11 +22,10 @@ const Footer = () => {
 
                 <div>
                     <div className='footer__column'>
-                        Адрес: г.Чистополь, ул.Пушкина, 133
+                        Адрес: г.Чистополь, ул.Пушкина, 133З
                     </div>
                     <div>
-                        Телефоны: 8 (922) 030-00-07 ||
-                        8 (987) 418-67-41
+                        Телефоны: 8 (987) 418-67-41
                     </div>
                 </div>
                 <div>
@@ -35,7 +34,7 @@ const Footer = () => {
                             Отдел продаж: 8:00 - 20:00
                         </div>
                         <div>
-                            E-mail: specmetallofficial@gmail.com
+                            E-mail: e_resurs16@mail.ru
                         </div >
                         {/*<AiOutlineFacebook size={"30px"} />*/}
                         {/*<AiOutlineInstagram size={"30px"} />*/}
