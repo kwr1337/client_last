@@ -25,7 +25,9 @@ const Footer = () => {
                         Адрес: г.Чистополь, ул.Пушкина, 133З
                     </div>
                     <div>
+                        <a href="tel:+79874186741">
                         Телефоны: 8 (987) 418-67-41
+                        </a>
                     </div>
                 </div>
                 <div>
@@ -34,7 +36,9 @@ const Footer = () => {
                             Отдел продаж: 8:00 - 20:00
                         </div>
                         <div>
+                            <a href="mailto:e_resurs16@mail.ru">
                             E-mail: e_resurs16@mail.ru
+                            </a>
                         </div >
                         {/*<AiOutlineFacebook size={"30px"} />*/}
                         {/*<AiOutlineInstagram size={"30px"} />*/}

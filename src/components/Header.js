@@ -62,7 +62,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <div className="menu__item__tel">
-                                    <img src={tel_img}/><p>8 (987) 418-67-41</p>
+                                    <img src={tel_img}/><p><a href="tel:+79874186741">8 (987) 418-67-41</a></p>
                                 </div>
                             </li>
                         </ul>

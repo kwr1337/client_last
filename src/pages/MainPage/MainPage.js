@@ -220,9 +220,6 @@ const MainPage = () => {
                                     <img src={f_3} alt="" className="services__img"/>
                                 </div>
                                 <div className="services__item">
-                                    <img src={f_4} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
                                     <img src={f_5} alt="" className="services__img"/>
                                 </div>
                                 <div className="services__item">
@@ -235,28 +232,7 @@ const MainPage = () => {
                                     <img src={f_8} alt="" className="services__img"/>
                                 </div>
                                 <div className="services__item">
-                                    <img src={f_9} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_10} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_11} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
                                     <img src={f_12} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_13} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_14} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item">
-                                    <img src={f_15} alt="" className="services__img"/>
-                                </div>
-                                <div className="services__item" id="zaiavka">
-                                    <img src={f_16} alt="" className="services__img"/>
                                 </div>
 
                             </div>
@@ -332,7 +308,7 @@ const MainPage = () => {
                                     <BsTelephone size={"20px"} className={'map_metca'}/>
                                     <h4>Телефон:</h4>
                                 </div>
-                                <p>8 (987) 418-67-41</p>
+                                <p><a href="tel:+79874186741">8 (987) 418-67-41</a></p>
 
                             </div>
                             <div className="zayvka__text__pod">
@@ -340,12 +316,12 @@ const MainPage = () => {
                                     <HiOutlineMail size={"20px"} className={'map_metca'}/>
                                     <h4>Почта:</h4>
                                 </div>
-                                <p>e_resurs16@mail.ru</p>
+                                <p><a href="mailto:e_resurs16@mail.ru">e_resurs16@mail.ru</a></p>
                             </div>
                         </div>
                         <div className="map_right">
                             <iframe
-                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A74a6f4ea17319a0cbb41e283494d3d53a29951957a8e2a26479154565accacce&amp;source=constructor"
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea7c0e931a87069e095a553d1bb2b290e45bcbf60d5b97a2284477cc65eca22c&amp;source=constructor"
                                 width="100%" height="400" frameBorder="0"></iframe>
                         </div>
                     </div>

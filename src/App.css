@@ -29,6 +29,7 @@ li{
 }
 
 a{
+    color: white;
     text-decoration: none;
 }
 
@@ -41,7 +42,6 @@ a{
         padding: 0px 5px !important;
     }
 }
-
 /*.App {*/
 /*  text-align: center;*/
 /*}*/
