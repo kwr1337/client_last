@@ -321,7 +321,7 @@ const MainPage = () => {
                         </div>
                         <div className="map_right">
                             <iframe
-                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea7c0e931a87069e095a553d1bb2b290e45bcbf60d5b97a2284477cc65eca22c&amp;source=constructor"
+                                src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=163268542712"
                                 width="100%" height="400" frameBorder="0"></iframe>
                         </div>
                     </div>
